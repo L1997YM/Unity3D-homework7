@@ -67,14 +67,14 @@ public class ParticleAuro : MonoBehaviour {
 	{
 	    for (int i = 0; i < count; i++)
 	    {
-					//粒子的转动半径随机变化
-					circle[i].radius += Random.Range(-0.2f,0.2f);
-					//控制粒子转动半径在一定范围内
-					if(circle[i].radius < Random.Range(minradius-0.5f,minradius))
-					   circle[i].radius += Random.Range(4.5f,5.5f);
-					else if(circle[i].radius > Random.Range(maxradius,maxradius+0.5f))
-					   circle[i].radius -= Random.Range(4.5f,5.5f);
-					//控制粒子的转动速度在0.1f到0.2f之间随机
+		//粒子的转动半径随机变化
+		circle[i].radius += Random.Range(-0.2f,0.2f);
+		//控制粒子转动半径在一定范围内
+		if(circle[i].radius < Random.Range(minradius-0.5f,minradius))
+		   circle[i].radius += Random.Range(4.5f,5.5f);
+		else if(circle[i].radius > Random.Range(maxradius,maxradius+0.5f))
+		   circle[i].radius -= Random.Range(4.5f,5.5f);
+		//控制粒子的转动速度在0.1f到0.2f之间随机
 	        if (clockwise)
 	            circle[i].angle -= Random.Range(0.1f,0.2f);
 	        else
